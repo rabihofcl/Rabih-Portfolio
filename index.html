@@ -375,23 +375,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 
 
-    <script>
-        $("#submit-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbxTV1PmFUqev5rPq_2W-KIRSA5GlvusggjJ7M_o/exec",
-                data:$("#submit-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Message submitted successfully")
-                    window.location.reload()
-                },
-                error:function (err){
-                    alert("Something Error")
-                }
-            })
-        })
-    </script>
+    
 
 
 </body>

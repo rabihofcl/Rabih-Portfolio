@@ -21,9 +21,20 @@ $(document).ready(function(){
                 minlength:10
             }
         },
-        // submitHandler(){
-        //     alert("Message sent successfully")
-        // }
+        submitHandler:function(form){
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxTV1PmFUqev5rPq_2W-KIRSA5GlvusggjJ7M_o/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Message submitted successfully")
+                    window.location.reload()
+                },
+                error:function (err){
+                    alert("Something Error")
+                }
+            })
+        }
     })
 
     $('#img1').hover(() => {
