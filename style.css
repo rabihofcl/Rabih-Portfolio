@@ -84,5 +84,8 @@ footer{
     color: #0275d8;
     font-size: 22px;
     z-index: 1;
-    
+}
+
+.form-section{
+    background: rgb(233, 234, 238);
 }
