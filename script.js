@@ -22,6 +22,10 @@ $(document).ready(function () {
         $(".navbar-collapse").collapse('hide');
     });
 
+    $('body').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+
     $("#submit-form").validate({
         rules: {
             name: {
