@@ -18,6 +18,10 @@ $(document).ready(function () {
         return this.optional(element) || value == value.match(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i);
     });
 
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+
     $("#submit-form").validate({
         rules: {
             name: {
