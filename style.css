@@ -2,6 +2,9 @@ body {
     margin: 0;
     padding: 0;
 }
+.error{
+    color: red;
+}
 header{
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15);
     border: none;
